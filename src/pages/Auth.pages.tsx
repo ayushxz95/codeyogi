@@ -1,4 +1,4 @@
-import { FC, memo, useEffect } from "react";
+import { memo } from "react";
 import { Route, Switch } from "react-router-dom";
 import AuthHero from "../components/AuthHero";
 import LoginPages from "./Login.pages";

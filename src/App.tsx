@@ -1,5 +1,5 @@
-import { FC, memo } from "react";
-import { BrowserRouter, Redirect, Route } from "react-router-dom";
+import { memo } from "react";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import AppcontainerPages from "./pages/Appcontainer.pages";
 import AuthPages from "./pages/Auth.pages";
 import NotFoundPages from "./pages/NotFound.pages";
@@ -11,7 +11,7 @@ const App: React.FC<Props> = (props) => {
   return (
     <div>
       <BrowserRouter>
-        <switch>
+        <Switch>
           <Route path="/" exact>
             <Redirect to="/login"></Redirect>
           </Route>
@@ -24,7 +24,7 @@ const App: React.FC<Props> = (props) => {
           <Route>
             <NotFoundPages />
           </Route>
-        </switch>
+        </Switch>
       </BrowserRouter>
     </div>
   );
