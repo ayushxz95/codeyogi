@@ -17,9 +17,8 @@ const Auth: React.FC<Props> = (props) => {
           <Route path="/signup">
             <SignupPages />
           </Route>
-          <AuthHero />
      </Switch>
-    <AuthHero/>
+     <AuthHero/>
     </div>
  );
 };
