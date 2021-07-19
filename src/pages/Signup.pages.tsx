@@ -9,7 +9,7 @@ const Signup: React.FC<Props> = (props) => {
     <div>
       <div className="flex flex-col ml-52 lg:ml-24 item-center">
        <div className="flex-shrink-0 pt-2">
-          <h1 className="text-4xl">Get started with a <div>free account</div> </h1>
+          <h1 className="text-4xl">Get started with a <p>free account</p> </h1>
           <h3 className="mt-2">Already have an account  ? <Link to="/login"><span className="text-blue-600 underline">Log in</span></Link></h3>
        </div>
       <form className="flex-col mt-16">
@@ -28,7 +28,7 @@ const Signup: React.FC<Props> = (props) => {
         <div className="flex items-center mt-10 ">
         <label>
         <input type="checkbox" className="form-checkbox"/>
-        <span className="ml-2">I agree to the <a href="#" className="text-blue-600"><span>Terms and condition</span></a> </span>
+        <span className="ml-2">I agree to the <Link to="" className="text-blue-600"><span>Terms and condition</span></Link> </span>
         </label>
         </div>
         <div className="flex mt-8 ml-60 "><button className="flex flex-shrink-0 px-4 py-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-700">
@@ -37,7 +37,7 @@ const Signup: React.FC<Props> = (props) => {
       </form>
       <div className="flex flex-row my-44">
       <p className="terms-conditions">© 2020 All Rights Reserved. <a href="index.html">CORK</a> a product of <div>
-      Designreset.</div> <div className="flex-wrap text-blue-600"><a href="#">Cookie Preferences</a>, <a href="#">Privacy</a>, and <a href="#">Terms</a></div>.</p>
+      Designreset.</div> <div className="flex-wrap text-blue-600"><Link to="">Cookie Preferences</Link>, <Link to="">Privacy</Link>, and <Link to="">Terms</Link></div>.</p>
       </div>
       </div>
     </div>
