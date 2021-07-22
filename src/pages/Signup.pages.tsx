@@ -1,10 +1,10 @@
-import { memo } from "react";
+import { FC, memo } from "react";
 import { Link } from "react-router-dom";
 
 interface Props {
 } 
 
-const Signup: React.FC<Props> = (props) => {
+const Signup: FC<Props> = (props) => {
  return(
     <div>
       <div className="flex flex-col ml-52 lg:ml-24 item-center">
@@ -23,7 +23,7 @@ const Signup: React.FC<Props> = (props) => {
         </div>
         <div className="flex flex-row mt-12 ">
            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="blue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
-        <div className="ml-2 border-b border-gray-400 focus-within:border-blue-600"><input type="password" placeholder="Password" className="border-none outline-none border-bottom: 2px blue focus-within:border-blue-600"/></div>
+        <div className="ml-2 border-b border-gray-400 focus-within:border-blue-600"><input type="password" placeholder="Password" autoComplete="current-password" className="border-none outline-none border-bottom: 2px blue focus-within:border-blue-600"/></div>
         </div>
         <div className="flex items-center mt-10 ">
         <label>
@@ -35,11 +35,9 @@ const Signup: React.FC<Props> = (props) => {
         Get Started!</button>
         </div>
       </form>
-      <div className="flex flex-row my-44">
-      <p className="terms-conditions">© 2020 All Rights Reserved. <a href="index.html">CORK</a> a product of <div>
-      Designreset.</div> <div className="flex-wrap text-blue-600"><Link to="">Cookie Preferences</Link>, <Link to="">Privacy</Link>, and <Link to="">Terms</Link></div>.</p>
-      </div>
-      </div>
+      <div className="mt-36"><p className="text-sm text-center w-96"> © 2020 All Rights Reserved. <span className="font-semibold text-blue-600 cursor-pointer">CODEYOGI</span> is a product of Devslane. <span className="font-semibold text-blue-600 cursor-pointer">Cookie Preferences</span>, <span className="font-semibold text-blue-600 cursor-pointer">Privacy</span>, <span className="font-semibold text-blue-600 cursor-pointer">Terms.</span></p></div>
+    </div>
+     
     </div>
  );
 };
