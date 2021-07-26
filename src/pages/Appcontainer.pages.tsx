@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { Route, Switch } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+// import Sidebar from "../components/Sidebar";
 import DashboardPages from "./Dashboard.pages";
 import LecturePages from "./Lecture.pages";
 import RecordingPages from "./Recording.pages";
@@ -11,7 +11,7 @@ interface Props {
 const Appcontainer: React.FC<Props> = (props) => {
  return(
     <div className="flex flex-row">
-    <Sidebar/>
+    {/* <Sidebar/> */}
      <Switch>
           <Route path="/recordings">
             <RecordingPages />
