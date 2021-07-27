@@ -28,6 +28,9 @@ const Dashboard: FC<Props> = (props) => {
           <button>Setting </button>
           <div className="p-1.5"><FaAngleDown color=""/></div>
        </div>
+       
+       </div>
+       <div className="ml-40 mt-60">
        </div>
      {/* Hello, This is Dashboard page 
      <Link to="/recordings"><span className="text-blue-500">Go to recordings</span> </Link> */}
